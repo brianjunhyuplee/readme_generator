@@ -25,13 +25,13 @@ function promptUser(){
           {
             type: "input",
             name: "projectDescription",
-            choices: "MIT Stuff and stuff",
-            message: "Please write a short description of you project"
+            message: "Please write a short description of you project",
           },
           {
             type: "list",
             name: "license",
-            message: "What kind of license should your project have?"
+            message: "What kind of license should your project have?",
+            choices: ["MIT","Stuff","stuff"]
           },
           {
             type: "input",
@@ -60,8 +60,9 @@ function promptUser(){
 // make the readme here
 function generateREADME(answers) {
     return `
-#${answers.projectName}
+# ${answers.projectName}
 <hr>
+
 [![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
 ## Description

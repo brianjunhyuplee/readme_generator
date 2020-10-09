@@ -1,10 +1,11 @@
 
-#sfgj
+#ssadg
 <hr>
-![Github license]("license image badge thing")
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-sfgj
+asdg
 
 ### Table of Contents
 
@@ -24,30 +25,31 @@ sfgj
 
 To install necessary dependencies, run the following command:
 
-  sfgj
-
+```
+  asdg
+```
 
 ## Usage
 
-ssfgj
+sdgasdg
 
 ## License
 
-This Project is licensed under the sfgj 
+This Project is licensed under the MIT 
 
 ## Contributing
 
-sgfj
+asdgasd
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-  sfgj
+  asdga
 ```
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at [sfgj](sfgj). You can find more of my work at [sgjsfjs](github.com/sgjsfjs).
+If you have any questions about the repo, open an issue or contact me directly at [dasgadsga](dasgadsga). You can find more of my work at [asgasdg](github.com/asgasdg).
     
