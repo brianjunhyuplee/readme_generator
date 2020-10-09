@@ -60,6 +60,7 @@ function promptUser(){
 function generateREADME(answers) {
     return `
 #${answers.projectName}
+<hr>
 ![Github license]("license image badge thing")
 
 ## Description
@@ -77,9 +78,9 @@ ${answers.projectDescription}
 ## Installation
 
 To install necessary dependencies, run the following commamd:
-```
-`${answers.dependencies}`
-```
+
+  ${answers.dependencies}
+
 
 ## Usage
 
@@ -87,7 +88,7 @@ ${answers.usingRepo}
 
 ## License
 
-This Project is licensed under the ${license} 
+This Project is licensed under the ${answers.license} 
 
 ## Contributing
 
@@ -96,9 +97,9 @@ ${contributing}
 ## Tests
 
 To run tests, run the following command:
-```
-`${answers.runTests}`
-```
+
+  ${answers.runTests}
+
 
 ## Questions
 
