@@ -121,7 +121,7 @@ To run tests, run the following command:
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at [${answers.email}](${answers.email}). You can find more of my work at [${answers.username}](${userHTML}).
+If you have any questions about the repo, open an issue or contact me directly at [${answers.email}](${answers.email}). You can find more of my work at [${answers.username}](${userHTML}) <img src = "${userPic}" width = 20 alt = "github profile picture">.
     `;
 }
 

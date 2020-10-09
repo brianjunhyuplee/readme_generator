@@ -51,5 +51,5 @@ To run tests, run the following command:
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at [](). You can find more of my work at [brianjunhyuplee](https://github.com/brianjunhyuplee).
+If you have any questions about the repo, open an issue or contact me directly at [](). You can find more of my work at [brianjunhyuplee](https://github.com/brianjunhyuplee) <img src = "https://avatars3.githubusercontent.com/u/70872311?v=4" width = 20 alt = "github profile picture">.
     
