@@ -59,11 +59,24 @@ function promptUser(){
 // make the readme here
 function generateREADME(answers) {
     return `
-    #${answers.projectName}
-    ![Github license]("license image badge thing")
+#${answers.projectName}
+![Github license]("license image badge thing")
 
-    ## Description
-    ${answers.projectDescription}
+## Description
+${answers.projectDescription}
+
+### Table of Contents
+
+*[Installation](#installation)
+*[Usage](#usage)
+*[License](#license)
+*[Contributing](#contributing)
+*[Tests](#tests)
+*[Questions](#questions)
+
+## Installation
+
+
     `;
 }
 
