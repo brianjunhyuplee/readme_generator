@@ -1,8 +1,11 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const axios = require("axios");
 
 const writeFileAsync = util.promisify(fs.writeFile);
+const userHTML = "";
+const userPic = "";
 
 // getting user input
 function promptUser(){
@@ -112,14 +115,23 @@ To run tests, run the following command:
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at [${answers.email}](${answers.email}). You can find more of my work at [${answers.username}](github.com/${answers.username}).
+If you have any questions about the repo, open an issue or contact me directly at [${answers.email}](${answers.email}). You can find more of my work at [${answers.username}](${userHTML}).
     `;
 }
 
 
 promptUser()
   .then(function(answers) {
+    axios
+    .get("https://api.github.com/users/"+answers.username)
+    .then(function(res){
+      userHTML = res.html_url;
+      userPic = res.avatar_url;
+    });
+
     const md = generateREADME(answers);
+    
+
 
     return writeFileAsync("README.md", md);
   })
