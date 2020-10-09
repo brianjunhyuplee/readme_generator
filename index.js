@@ -25,10 +25,11 @@ function promptUser(){
           {
             type: "input",
             name: "projectDescription",
+            choices: "MIT Stuff and stuff",
             message: "Please write a short description of you project"
           },
           {
-            type: "input",
+            type: "list",
             name: "license",
             message: "What kind of license should your project have?"
           },
@@ -61,7 +62,7 @@ function generateREADME(answers) {
     return `
 #${answers.projectName}
 <hr>
-![Github license]("license image badge thing")
+[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
 ## Description
 ${answers.projectDescription}
@@ -69,18 +70,24 @@ ${answers.projectDescription}
 ### Table of Contents
 
 *[Installation](#installation)
+
 *[Usage](#usage)
+
 *[License](#license)
+
 *[Contributing](#contributing)
+
 *[Tests](#tests)
+
 *[Questions](#questions)
 
 ## Installation
 
-To install necessary dependencies, run the following commamd:
+To install necessary dependencies, run the following command:
 
+\`\`\`
   ${answers.dependencies}
-
+\`\`\`
 
 ## Usage
 
@@ -92,14 +99,15 @@ This Project is licensed under the ${answers.license}
 
 ## Contributing
 
-${contributing}
+${answers.contributingRepo}
 
 ## Tests
 
 To run tests, run the following command:
 
+\`\`\`
   ${answers.runTests}
-
+\`\`\`
 
 ## Questions
 
