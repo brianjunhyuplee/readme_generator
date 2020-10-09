@@ -81,8 +81,27 @@ To install necessary dependencies, run the following commamd:
 `${answers.dependencies}`
 ```
 
+## Usage
+
+${answers.usingRepo}
+
+## License
+
+This Project is licensed under the ${license} 
+
+## Contributing
+
+${contributing}
+
+## Tests
+
+To run tests, run the following command:
+```
+`${answers.runTests}`
+```
     `;
 }
+
 
 promptUser()
   .then(function(answers) {
