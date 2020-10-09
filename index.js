@@ -76,6 +76,10 @@ ${answers.projectDescription}
 
 ## Installation
 
+To install necessary dependencies, run the following commamd:
+```
+`${answers.dependencies}`
+```
 
     `;
 }
