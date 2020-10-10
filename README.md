@@ -44,9 +44,21 @@ Based on these questions, a read me will be generated. To access the README, cli
 
 ## Objective
 
+### Inquirer
 
+Inquirer is used to prompt the user and receieve the user inputs.
+*the below code is a sample of how to prompt the user for a username*
 
+```bash
+return inquirer.prompt([
+    {
+      type: "input",
+      name: "username",
+      message: "What is your GitHub username?"
+    }
+```
 
+### Generating the README
 
 ## License
 
