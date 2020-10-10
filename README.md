@@ -42,7 +42,7 @@ To use the application run an integrated terminal within the index.js file. The 
 
 Based on these questions, a read me will be generated. To access the README, click the README.md file. To observe the final product, right click the file and open preview.
 
-## Objective
+## Process
 
 ### Inquirer
 
@@ -60,6 +60,18 @@ return inquirer.prompt([
 
 ### Generating the README
 
+A function called generateREADME takes in the answers from inquirer. By encompassing the contents of the function in backticks, the line by line README can be written in markdown formatting. 
+To access the user inputs the below code can be implemented.
+
+```bash
+${answers.nameOfData}
+```
+
+Once the README is documented, it will create the actual file with the contents using the below line.
+
+```bash
+return writeFileAsync("README.md", md);
+```
 ## License
 
 This Project is licensed under the MIT License
