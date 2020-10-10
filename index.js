@@ -105,7 +105,7 @@ ${answers.usingRepo}
 
 ## License
 
-This Project is licensed under the ${answers.license} 
+This Project is licensed under the ${answers.license} lisense.
 
 ## Contributing
 
@@ -132,7 +132,6 @@ promptUser()
          .get("https://api.github.com/users/" + answers.username)
         .then(function (res) {
           const userHTML = res.data.html_url;
-          console.log(userHTML);
           const userPic = res.data.avatar_url;
           const md = generateREADME(answers,userHTML,userPic);
           return writeFileAsync("README.md", md);
