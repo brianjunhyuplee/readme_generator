@@ -72,13 +72,31 @@ Once the README is documented, it will create the actual file with the contents 
 ```bash
 return writeFileAsync("README.md", md);
 ```
+
+### Axios
+
+Axios was only used to access github's api of user and user information. For this specific code, it was implemented right before calling the generateREADME function. Additional parameters were passed into the generateREADME function to pass in the results from Axios.
+
+*code excerpt*
+
+```bash
+promptUser()
+  .then(function (answers) {
+    axios
+         .get("https://api.github.com/users/" + answers.username)
+        .then(function (res) {
+          const userHTML = res.data.html_url;
+          const userPic = res.data.avatar_url;
+          const md = generateREADME(answers,userHTML,userPic);
+          return writeFileAsync("README.md", md);
+        });
+        //return true;
+  })
+```
+
 ## License
 
 This Project is licensed under the MIT License
-
-## Contributing
-
-nothin
 
 ## Tests
 
@@ -87,6 +105,18 @@ To run tests, run the following command:
 ```
   node index.js
 ```
+
+## Built With:
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [JS](https://developer.mozilla.org/en-US/docs/Web/JS)
+* [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+
+
+## Author(s):
+**Brian Lee**
+* [GitHub](https://github.com/brianjunhyuplee)
+* [LinkedIn](https://www.linkedin.com/in/brian-lee-559208187/)
+
 
 ## Questions
 
